@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Variables Globales y Configuración
+   ========================================================================== */
+:root {
+    --uni-dark: #ce0404;       /* Azul oscuro institucional moderno */
+    --uni-accent: #ff0000;     /* Color de acento (Warning de Bootstrap) */
+    --bg-light: #f8f9fa;       /* Fondo general gris claro */
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-light);
+    color: #334155;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Clases Personalizadas del HTML
+   ========================================================================== */
+
+/* Fondo oscuro para la Navbar */
+.bg-uni-dark {
+    background-color: var(--uni-dark) !important;
+}
+
+/* Ajuste de espaciado de letras para el logo */
+.tracking-tight {
+    letter-spacing: -0.05em;
+}
+
+/* ==========================================================================
+   Componentes: Tarjetas de Sedes (Cards)
+   ========================================================================== */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: var(--transition-smooth);
+}
+
+/* Efecto Hover: Eleva la tarjeta y profundiza la sombra */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fuerza a que todas las imágenes midan lo mismo y no se deformen */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Línea divisoria personalizada dentro de la tarjeta */
+.card-body hr {
+    border-top: 2px solid var(--uni-accent);
+    width: 60px;
+    margin: 0.75rem 0;
+    opacity: 1;
+}
+
+/* Ajuste fino de las listas de servicios */
+.list-group-item {
+    border-bottom: 1px dashed #e2e8f0 !important;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.list-group-item:last-child {
+    border-bottom: none !important;
+}
+
+/* ==========================================================================
+   Paginación y Botones
+   ========================================================================== */
+
+/* Color de los enlaces de paginación comunes */
+.page-link {
+    color: var(--uni-dark);
+    border-color: #dee2e6;
+    transition: var(--transition-smooth);
+}
+
+.page-link:hover {
+    color: #000;
+    background-color: #e2e8f0;
+    border-color: #dee2e6;
+}
+
+/* Paginación Activa (Página 2) */
+.page-item.active .page-link {
+    background-color: var(--uni-dark) !important;
+    border-color: var(--uni-dark) !important;
+    color: #0015ff !important;
+}
+
+/* Botón "Volver al inicio" */
+.btn-outline-dark {
+    border-width: 2px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+}
+
+/* ==========================================================================
+   Footer y Bloques de Información
+   ========================================================================== */
+
+footer {
+    font-size: 0.95rem;
+}
+
+/* Ajuste del bloque de horarios para que combine con el diseño */
+.bg-light.shadow-sm {
+    border-left: 4px solid var(--uni-dark);
+    background-color: #ffffff !important;
+}
+.page-link:hover {
+    color: #1e00ff;
+    background-color: #0062e2;
+    border-color: #dee2e6;
+}

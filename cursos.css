@@ -1,0 +1,52 @@
+/* Paleta de colores universitaria premium */
+        :root {
+            --uni-bg-dark: #ce0404;      /* Azul Marino Institucional */
+            --uni-accent: #000000;       /* Dorado/Arena Académico */
+            --uni-card-border: #e2e8f0;
+        }
+        body {
+            background-color: #f8fafc;
+        }
+        .bg-uni-dark { background-color: var(--uni-bg-dark) !important; }
+        .text-uni-dark { color: var(--uni-bg-dark) !important; }
+        .text-uni-accent { color: var(--uni-accent) !important; }
+        
+        /* Estilos de pestañas de navegación */
+        .nav-pills .nav-link {
+            color: var(--uni-bg-dark);
+            font-weight: 600;
+            border: 1px solid var(--uni-bg-dark);
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+        }
+        .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+            background-color: var(--uni-bg-dark) !important;
+            color: #ffffff !important;
+        }
+        
+        /* Tarjetas de carreras */
+        .card-university {
+            border: 1px solid var(--uni-card-border);
+            border-top: 5px solid var(--uni-bg-dark);
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-university:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(15, 44, 89, 0.1) !important;
+        }
+        .card-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+        .card-img-container img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+.page-link:hover {
+    color: #0033ff;
+    background-color: #105dc0;
+    border-color: #dee2e6;
+}
